@@ -3,7 +3,7 @@
 /**
  * is_printable - checks if a char is printable
  * @c: Char to be checked.
- * Return: 1 if c is printable, 0 otherwise
+ * Return: 1
  */
 int is_printable(char c)
 {
@@ -54,8 +54,7 @@ int is_digit(char c)
  * convert_size_number - Casts a number to the specified size
  * @num: Number to be casted.
  * @size: Number indicating the type to be casted.
- *
- * Return: Casted value of num
+ * Return: value of num
  */
 long int convert_size_number(long int num, int size)
 {
@@ -69,10 +68,9 @@ long int convert_size_number(long int num, int size)
 
 /**
  * convert_size_unsgnd - Casts a number to the specified size
- * @num: Number to be casted
- * @size: Number indicating the type to be casted
- *
- * Return: Casted value of num
+ * @num: number to be casted
+ * @size: number indicating type
+ * Return: number
  */
 long int convert_size_unsgnd(unsigned long int num, int size)
 {
