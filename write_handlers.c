@@ -9,12 +9,11 @@
  * @width: get width.
  * @precision: precision specifier
  * @size: Size specifier
- *
  * Return: Number of chars printed.
  */
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
-{ /* char is stored at left and paddind at buffer's right */
+{
 	int i = 0;
 	char padd = ' ';
 
@@ -80,15 +79,14 @@ int write_number(int is_negative, int ind, char buffer[],
 
 /**
  * write_num - Write a number using a bufffer
- * @ind: Index at which the number starts on the buffer
  * @buffer: Buffer
+ * @ind: starting index on the buffer
  * @flags: Flags
  * @width: width
  * @prec: Precision specifier
  * @length: Number length
  * @padd: Pading char
  * @extra_c: Extra char
- *
  * Return: Number of printed chars.
  */
 int write_num(int ind, char buffer[],
@@ -146,7 +144,6 @@ int write_num(int ind, char buffer[],
  * @width: Width specifier
  * @precision: Precision specifier
  * @size: Size specifier
- *
  * Return: Number of written chars.
  */
 int write_unsgnd(int is_negative, int ind,
